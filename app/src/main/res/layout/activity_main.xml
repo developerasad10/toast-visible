@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#D87400"
+    >
+
+   <ImageView
+       android:id="@+id/pic"
+       android:layout_width="match_parent"
+       android:layout_height="320dp"
+       android:src="@drawable/orton"
+       android:scaleType="centerCrop"
+       android:visibility="visible"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="#FF6CA8"
+       android:weightSum="15">
+
+      <Button
+          android:id="@+id/visible"
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="5"
+          android:padding="20dp"
+          android:text="Visible"
+          android:textSize="20dp" />
+
+      <Button
+          android:id="@+id/invisible"
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:text="Invisible"
+          android:textSize="20dp"
+         android:layout_weight="5"
+          android:layout_margin="10dp"
+          android:padding="20dp"
+         />
+      <Button
+          android:id="@+id/toast"
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:text="Toast"
+          android:textSize="20dp"
+         android:layout_weight="5"
+          android:layout_margin="10dp"
+          android:padding="20dp"
+         />
+
+
+   </LinearLayout>
+
+</LinearLayout>
